@@ -1,0 +1,40 @@
+Container(
+                      height: 155,
+                      width: 155,
+                      child: Neumorphic(
+                        style: NeumorphicStyle(
+                            shape: NeumorphicShape.concave,
+                            // depth: 15,
+                            intensity: 15,
+                            surfaceIntensity: 0.8,
+                            color:
+                            //context.theme.backgroundColor,
+                            Color(0XFFE9FEF8),
+                            boxShape: NeumorphicBoxShape.roundRect(
+                                BorderRadius.circular(30))),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(left: 15, top: 18),
+                              child: CircleAvatar(
+                                radius: 23,
+                                // backgroundColor: Colours.pinkIcon,
+                                backgroundColor: Colours.pinkIcon,
+                                child: Icon(Icons.recent_actors_outlined,
+                                    color: Colors.black),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 16, top: 45, right: 16),
+                              child: AutoSizeText(
+                                  "Card Manager",
+                                  style: TextStyles.textStyle1
+
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
